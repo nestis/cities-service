@@ -2,7 +2,7 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 
 sourceCompatibility = 1.7
-version = '1.0'
+version = '1.0.0-SNAPSHOT'
 jar {
     manifest {
         attributes 'Implementation-Title': 'Spring Boot Cities Service',
@@ -12,15 +12,8 @@ jar {
 
 repositories {
 	maven {
-		url "http://repo.spring.io/libs-release-local"
+		url "https://nexus.ci.gsnet.corp/nexus/content/groups/public" 
 	}
-	maven {
-		url "http://repo.spring.io/libs-snapshot-local"
-	}
-	maven {
-		url "http://repo.spring.io/libs-milestone-local"
-	}
-    mavenCentral()
 }
 
 buildscript {
@@ -50,7 +43,7 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
     compile("org.springframework.cloud:spring-cloud-starter-config")
     compile("org.springframework.data:spring-data-mongodb")
-    testCompile("org.springframework.boot:spring-boot-starter-test	")
+    testCompile("org.springframework.boot:spring-boot-starter-test")
 }
 
 uploadArchives {

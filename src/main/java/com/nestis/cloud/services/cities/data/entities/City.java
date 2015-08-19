@@ -8,7 +8,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
  * @author Nestor
  *
  */
-@Document(collection = "city")
+@Document(collection = "City")
 public class City {
 	
 	@Id

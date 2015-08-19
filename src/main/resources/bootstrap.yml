@@ -2,7 +2,7 @@ spring:
   application:
     name: citiesService
   profiles:
-    active: development
+    active: cloud
   cloud:
     config:
-      uri: http://localhost:8080
+      uri: http://config-server.cfapps.io/

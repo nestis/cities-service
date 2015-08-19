@@ -1,6 +1,5 @@
 package com.nestis.cloud.services.cities.data.repository;
 
-import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 import com.nestis.cloud.services.cities.data.entities.City;

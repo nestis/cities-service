@@ -1,0 +1,7 @@
+---
+applications:
+- name: nestis-cities-service
+  memory: 512M
+  instances: 1
+  host: nestis-cities-service
+  path: build/libs/cities-service-1.0.0-SNAPSHOT.jar
