@@ -12,7 +12,7 @@ jar {
 
 repositories {
 	maven {
-		url "https://nexus.ci.gsnet.corp/nexus/content/groups/public" 
+		url "" 
 	}
 }
 
